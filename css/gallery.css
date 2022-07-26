@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: auto;
+  background-color: rgba(2, 2, 38, 0.946);
+  color: aliceblue;
+  font-size:x-large;
+}
+
+.photos{
+  margin: 10px 50px;
+}
+
+.photos img{
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 1s;
+}
+
+.photos img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  
+}

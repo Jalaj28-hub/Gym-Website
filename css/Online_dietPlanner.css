@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  position: relative;
+  font-family: "Dancing Script", cursive;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+}
+#logo {
+  margin: 10px;
+  padding: 0px;
+}
+#logo img {
+  height: 68px;
+  width: 118px;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3 rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+.BG_diet{
+  display: flex;
+  height: 545px;
+  padding: 3px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.BG_diet::before {
+  content: "";
+  position: absolute;
+  background: url("../photos/pexels-nataliya-vaitkevich-5794778.jpg") no-repeat
+  top -200px center/cover;
+  left: 0px;
+  height: 120%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.diet_form {
+  color:black;
+  display: flex;
+  font-family: "Dancing Script", cursive;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.1rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.1rem;
+
+}
+.video .video_heading{
+  display: flex;
+  font-family: "Dancing Script", cursive;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: x-large;
+  
+}
+.video video{
+  margin: 0%;
+  padding: 0%;
+  border: 10px solid white;
+ 
+}
+.diet_form .heading{
+  display: flex;
+  font-family: "Dancing Script", cursive;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: xxx-large;
+  
+  
+}
+.row button{
+  margin: 10px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 5px;
+  color:#ddd ;
+  background-color:rgba(2, 2, 38, 0.946) ;
+}
+.row button:hover{
+  zoom: 1.1;
+  border-radius: 5px;
+  color: rgba(2, 2, 38, 0.946);
+  background-color: #ddd;
+}
+.dietPlanner{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.table {
+   font-family: "Dancing Script", cursive;
+
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+ padding: 200px;
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover {
+  background-color: #ddd;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(2, 2, 38, 0.946);
+  color: white;
+}
+/* #dietPlanner{
+  display: none;
+} */
+.Not-shown{
+  display: none;
+}

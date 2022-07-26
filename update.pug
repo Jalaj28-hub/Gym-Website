@@ -1,0 +1,19 @@
+doctype html
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(charset='utf-8')
+  title Login / Sign Up Form
+  link(rel='shortcut icon' href='/assets/favicon.ico')
+  link(rel='stylesheet' href='../css/log_in.css')
+.container
+  form#login.form
+    h1.form__title Update Password
+    .form__message.form__message--error
+    .form__input-group
+      input.form__input(type='text' autofocus='' placeholder='Username or email')
+      .form__input-error-message
+    .form__input-group
+      input.form__input(type='password' autofocus='' placeholder='Password')
+      .form__input-error-message
+      input.form__input(type='password' autofocus='' placeholder='Confirm Password')
+    button.form__button(type='submit') Change Password

@@ -1,0 +1,31 @@
+doctype html
+head
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(charset='utf-8')
+  title Login / Sign Up Form
+  link(rel='shortcut icon' href='/assets/favicon.ico')
+  link(rel='stylesheet' href='../css/log_in.css')
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+
+.container(data-aos="fade-in"
+     
+     data-aos-duration="1000"
+     )
+  
+   form#login.form(action='/login' method='POST')
+    h1.form__title Login
+    .form__message.form__message--error
+    .form__input-group
+      input.form__input(type='email' autofocus='' placeholder='Email' name = 'email')
+      .form__input-error-message
+    .form__input-group
+      input.form__input(type='password' autofocus='' placeholder='Password' name='password')
+      .form__input-error-message
+    button.form__button(type='submit') Continue
+    p.form__text
+      //- a.form__link(href='#') Forgot your password?
+    p.form__text
+      a#linkCreateAccount.form__link(href='/Register') Don&apos;t have an account? Create account
+script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+script.
+  AOS.init();

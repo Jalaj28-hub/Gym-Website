@@ -1,0 +1,127 @@
+doctype html 
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/index.css')
+  link(rel='stylesheet' media='screen and (max-width: 1170px)' href='../css/phone.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Playball&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap' rel='stylesheet')
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+  title GYM WEBSITE
+nav#navbar
+  #logo
+    img(src='../photos/logo.png' alt='logo')
+  div
+    ul
+      li.item(data-aos="fade-in"
+     data-aos-duration="1000"
+     )
+        a(href='#home') Home
+      li.item(data-aos="fade-in"
+     data-aos-duration="500"
+     )
+        a(href='#') Content
+      li.item(data-aos="fade-in"
+     data-aos-duration="500"
+     )
+        a(href='#services') Services
+      li.item(data-aos="fade-in"
+     data-aos-duration="500"
+     )
+        a(href='#contact') Contact us
+section#home
+  h1.h-primary
+    | Welcome To JP Gym
+  p#username
+    | Hey! #{name} 
+  p
+    | Be The Part Of Our Healthy Family 
+  a(target ='_self'  href='/login')
+    button.btn1 Register
+section.services-container
+  //
+    <h1 class="h-primary center">Our Services</h1>
+    <hr>
+  #services
+    .box(data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="500"
+     data-aos-offset="300")
+      img(src='../photos/services.png' alt='services')
+      a(href='/gallery' target='_self')
+        h2.h-secondary.center Gym Facilities
+      p.center
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi temporibus at, illum suscipit dolor rerum voluptate tempore magni sed repudiandae praesentium architecto dicta cumque?
+    .box(data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="500"
+     data-aos-offset="300")
+      img(src='../photos/services2.png' alt='services')
+      a(href="/franchise" target="_self") 
+        h2.h-secondary.center Franchise
+      p.center
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi temporibus at, illum suscipit
+        | dolor rerum voluptate tempore magni sed repudiandae praesentium architecto dicta cumque?
+    .box(data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+      data-aos-duration="500"
+     data-aos-offset="300")
+      img(src='../photos/services3.png' alt='services')
+      a(href="/Online_dietPlanner" target="_self") 
+       h2.h-secondary.center Dieticians
+      p.center
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi temporibus at, illum suscipit
+        | dolor rerum voluptate tempore magni sed repudiandae praesentium architecto dicta cumque?
+section#client-section
+  h1.h-primary.center
+    | Our Clients
+  #client
+    .client-item(data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom")
+      img(src='../photos/DP.jpeg' alt='Deepika Padukone')
+      // <h2 class="h-secondary">Deepika Padukone</h2>
+    .client-item(data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom")
+      img(src='../photos/SK.jpeg' alt='Deepika Padukone')
+      // <h2 class="h-secondary">Salman Khan</h2>
+    .client-item(data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom")
+      img(src='../photos/KK.jpeg' alt='Deepika Padukone')
+      // <h2 class="h-secondary">Katrina Kaif</h2>
+    .client-item(data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom")
+      img(src='../photos/KR.jpeg' alt='Deepika Padukone')
+      // <h2 class="h-secondary">Kritik Roshan</h2>
+section#contact
+  h1.h-primary.center Any Query?
+  #contact-box
+    form(action='/' method='POST')
+      .form-group
+        label(for='name') Name: 
+        input#name(type='text' name='name' placeholder='Enter your name')
+      .form-group
+        label(for='email') Email: 
+        input#email(type='email' name='email' placeholder='Enter your email')
+      .form-group
+        label(for='phone') Phone Number: 
+        input#phone(type='phone' name='phone' placeholder='Enter your phone')
+      .form-group
+        label(for='message') Message: 
+        textarea#message(name='message' cols='30' rows='10')
+      .form-group
+        button.btn2 Submit
+footer
+  .center
+    | Copyright &copy; www.JPGym.com. All rights reserved!
+    
+script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+script.
+  AOS.init();

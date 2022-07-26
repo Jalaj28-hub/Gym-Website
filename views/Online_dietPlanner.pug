@@ -1,0 +1,298 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/Online_dietPlanner.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Playball&display=swap' rel='stylesheet')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap' rel='stylesheet')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+  script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+
+  title Document
+nav#navbar
+  #logo
+    img(src='../photos/logo.png' alt='logo')
+  div
+    ul
+      li.item
+        a(href='/#') Home
+      li.item
+        a(href='/#content') Content
+      li.item
+        a(href='/#services') Services
+      li.item
+        a(href='/#contact') Contact us
+.BG_diet
+  .video(data-aos='fade-up' data-aos-anchor-placement='top-center' data-aos-delay='2000')
+    .video_heading Health Is Wealth!
+    video(width='290' height='500' autoplay='' loop='' src='../video/pexels-polina-kovaleva-5644871.mp4')
+  .diet_form
+    .heading Online Diet Planner
+    form(action='#')
+      label(for='Diet') I am a 
+      | 
+      |
+      |
+      |
+      select#diettype(name='diettype')
+        option(value='Vegetarian') Vegetarian
+        option(value='Non-Vegetarian') Non-Vegetarian
+        option(value='Both') Both
+      |
+      |
+      |
+      |
+      label(for="Diet") &
+      br
+      label(for='cars') want a diet of 
+      |
+      |
+      select#Calories(name='Calories')
+        option(value='500') 500
+        option(value='1000') 1000
+        option(value='1500') 1500
+        option(value='2000') 2000
+
+      label(for='cars') Calories
+      .row
+        button(onclick='myFunction(); document.location.reload(true);') Generate
+    #dietPlanner
+      #vegetarian
+        #vegetarian500.Not-shown
+          table#table500.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Oatmeal and peaches 
+              td Tomato and hummus on rye
+              td Bell peper and hummus snack
+            tr
+              td 1 Bowl
+              td 1 Sandwich
+              td 1 Serving
+        #vegetarian1000.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Vegetable 3 egg scramble
+              td Mexican cottage cheese salad
+              td Cool summer cucumber and toss
+            tr
+              td 1 Serving
+              td 1 Serving
+              td 1 Serving
+        #vegetarian1500.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Banana oat meal
+              td strawberry smoothie,Peanut Butter
+              td Apples and almond butter
+            tr
+              td 2 Serving
+              td 1 Serving
+              td 1 apple
+        #vegetarian2000.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Banana Oatmeal smoothie
+              td Big PB&J Sandwich
+              td Peanut Butter celery
+            tr
+              td 1 Serving
+              td 2 Serving
+              td 2 Serving
+      #Non-vegetarian
+        #Non-vegetarian500.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Corn flakes
+              td Turkey lettuce Rollups
+              td Cinnamon apples bites
+            tr
+              td 1 Serving
+              td 1 Serving
+              td 1 Serving
+        #Non-vegetarian1000.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Granola & fruit smoothie
+              td Chicken Selery Sticks
+              td Nonfat greek Yogurt
+            tr
+              td 1 Serving
+              td 10 sticks
+              td 1 Serving
+        #Non-vegetarian1500.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Ham and egg scrambled
+              td Turkey Hummus Sandwich
+              td Chicken Sandwich
+            tr
+              td 1 Serving
+              td 1 Serving
+              td 1 Serving
+        #Non-vegetarian2000.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Hazelnut and sushi
+              td Chicken ceasar wraps
+              td Deli Beef
+            tr
+              td 2 Serving
+              td 2 Serving
+              td 2 Serving
+      #Both
+        #Both500.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Blue and blackberries
+              td Caprese Salad
+              td Bell Pepper and Humus
+            tr
+              td 1 bowl
+              td 1 Serving
+              td 1 Serving
+        #Both1000.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Egg turkey cheese wraps
+              td Yogurt and banana
+              td Peanut Butter and celery
+            tr
+              td 1 Serving
+              td 2 banana 
+              td 1 Serving
+        #Both1500.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Southwestern eggs & strawberries
+              td Tuna fish
+              td Celery and hummus
+            tr
+              td 1 Serving
+              td 1 Serving
+              td 2 Serving
+        #Both2000.Not-shown
+          table.table
+            tr
+              th Breakfash
+              th Lunch
+              th Dinner
+            tr
+              td Salsa egg sandwich
+              td Tuna and bean salad
+              td Simple lemon tuna
+            tr
+              td 1 Serving
+              td 1 Serving
+              td 1 Serving
+script.
+  AOS.init();
+
+  function myFunction(){
+  window.location.reload();
+  var x = document.getElementById("diettype").value;
+  var y = document.getElementById("Calories").value;
+  var a;
+  if(x=="Vegetarian" && y=="500"){
+  a=document.getElementById("vegetarian500");
+  a.style.display="block";
+  }
+  else if(x == "Vegetarian" && y =="1000"){
+  a = document.getElementById("vegetarian1000");
+  a.style.display = "block";
+  }
+  else if (x == "Vegetarian" && y == "1500") {
+  a = document.getElementById("vegetarian1500");
+  a.style.display = "block";
+  }
+  else if (x == "Vegetarian" && y == "2000") {
+  a = document.getElementById("vegetarian2000");
+  a.style.display = "block";
+  }
+  else if (x == "Non-Vegetarian" && y == "500") {
+  a = document.getElementById("Non-vegetarian500");
+  a.style.display = "block";
+  }
+  else if (x == "Non-Vegetarian" && y == "1000") {
+  a = document.getElementById("Non-vegetarian1000");
+  a.style.display = "block";
+  }
+  else if (x == "Non-Vegetarian" && y == "1500") {
+  a = document.getElementById("Non-vegetarian1500");
+  a.style.display = "block";
+  }
+  else if (x == "Non-Vegetarian" && y == "2000") {
+  a = document.getElementById("Non-vegetarian2000");
+  a.style.display = "block";
+  }
+  else if (x == "Both" && y == "500") {
+  a = document.getElementById("Both500");
+  a.style.display = "block";
+  }
+  else if (x == "Both" && y == "1000") {
+  a = document.getElementById("Both1000");
+  a.style.display = "block";
+  }
+  else if (x == "Both" && y == "1500") {
+  a = document.getElementById("Both1500");
+  a.style.display = "block";
+  }
+  else if (x == "Both" && y == "2000") {
+  a = document.getElementById("Both2000");
+  a.style.display = "block";
+  }
+  }
